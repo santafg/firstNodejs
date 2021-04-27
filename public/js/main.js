@@ -3,9 +3,7 @@ const city_name = document.getElementById('city_name');
 const submitBtn = document.getElementById("submitBtn");
 const temp_status = document.getElementById("temp_status");
 const temp = document.getElementById("temp");
-var cors = require('cors');
 const dataHide = document.querySelector(".middle_layer");
-app.use(cors());
 
 
 
