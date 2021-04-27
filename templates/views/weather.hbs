@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{>refLinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 col-md-10 mx-auto main_por">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter a city" autocomplete="off">
+                        <button type="sumbit" value="search" id="submitBtn">Search</button>
+                        {{!-- <input type="sumbit" value="search" id="submitBtn"> --}}
+                    </form>
+                </div>
+                <div class="tempInfo">
+                    <p id="city_name">
+                        Get output here
+                    </p>
+                    <div class="data_hide middle_layer">
+                        <p ><span id="temp">0</span>&deg;C</p>
+                        <p id="temp_status"><i class="fa fa-cloud"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
