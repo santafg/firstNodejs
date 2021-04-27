@@ -5,7 +5,7 @@ const hbs = require('hbs');
 var cors = require('cors');
 const port = process.env.PORT || 8000;
 
-app.use(cors())
+app.use(cors());
 
 const staticPath = path.join(__dirname , "../public");
 const templatePath = path.join(__dirname , "../templates/views");
