@@ -16,10 +16,11 @@ const getInfo = async(event) => {
         dataHide.classList.add('data_hide'); 
     } else {
         try {   
-            let url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=db32c57d21c418692ebe9d5fff9ebee0`;
+            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=db32c57d21c418692ebe9d5fff9ebee0`;
             const response = await fetch(url);
             const data = await response.json();
             const arrData = [data];
+            console.log(arrData);
             city_name.innerText = `${arrData[0].name} ,${arrData[0].sys.country}`; 
             temp.innerText = arrData[0].main.temp;
             dataHide.classList.remove('data_hide'); 
